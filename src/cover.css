@@ -1,0 +1,138 @@
+.cover{
+    background: url('./assets/back.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    flex-flow: wrap;
+    clip-path: polygon(0 0,100% 0,100% calc(100% - 50px),50% 100%,0 calc(100% - 50px));
+
+}
+.cover img{
+    border-radius: 50%;
+    width: 250px;
+    transition: all 1s ease;
+}
+.cover img:hover{
+    transform: rotate(20deg);
+}
+.cover h2{
+    color:#47B1FC;
+    margin-bottom: 30px;
+    
+}
+.name{
+    color:#8d37f5;
+    margin:5px;
+    text-transform: uppercase;
+    font-size: 30px;
+    animation: nameColor 1s infinite;
+    animation: movement 1s infinite alternate;
+}
+.description{
+    margin-top: 30px;
+    display: flex;
+    flex-flow: column wrap;
+}
+@keyframes nameColor {
+    0%{
+        color:#8a4bd6;
+    }
+    25%{
+        color:#8d37f5;
+    }
+    50%{
+        color:#7234be;
+    }
+    75%{
+        color:#7423d7;
+    }
+    100%{
+        color:#7313e9;
+    }
+}
+@keyframes movement {
+    0%{
+        transform: translateX(8px);
+    }
+    50%{
+        transform: translateX(-5px);
+    }   
+}
+@keyframes movement2 {
+    0%{
+        transform: translateX(5px);
+    }
+    50%{
+        transform: translateX(-5px);
+    }   
+}
+@keyframes movement3 {
+    0%{
+        transform: translateX(0px);
+    }
+    50%{
+        transform: translateX(-5px);
+    }   
+}
+@media (max-width:1040px){
+    .description{
+        margin-bottom: 100px;
+    }
+    .cover img{
+        border-radius: 50%;
+        width: 180px;
+        transition: all 1s ease;
+    }
+    .cover h2{
+        /* margin-bottom: 60px; */
+        letter-spacing: 3px;
+         margin:10px; 
+    }
+    .cover .name{
+        /* margin:15px; */
+    }
+}
+@media (max-width:640px){
+    .description{
+        margin-bottom: 300px;
+    }
+    .cover h2{
+        /* margin-bottom: 30px; */
+        letter-spacing: 2px;
+        margin:0px;
+    }
+    .name{
+        color:#8d37f5;
+        margin-top:10px;
+        text-transform: uppercase;
+        font-size: 30px;
+        animation: nameColor 1s infinite;
+        animation: movement2 1s infinite alternate;
+    }
+}
+@media (max-width:420px){
+
+    .name{
+        color:#8d37f5;
+        margin-top:10px;
+        text-transform: uppercase;
+        font-size: 30px;
+        animation: nameColor 1s infinite;
+        animation: movement3 1s infinite alternate;
+    }
+}
+@media (max-width:300px){
+
+    .name{
+        color:#8d37f5;
+        margin-top:10px;
+        text-transform: uppercase;
+        font-size: 20px;
+        animation: nameColor 1s infinite;
+        animation: movement3 1s infinite alternate;
+    }
+}

@@ -1,0 +1,97 @@
+#contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('./assets/purple.jpg');
+    background-repeat: no-repeat;
+    /* background-position: 25%; */
+    background-attachment: fixed;
+    background-size: cover;
+
+}
+form{
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+form input{
+    width: 200px;
+    height: 30px;
+    border-radius: 10px;
+    border:none;
+    padding: 10px;
+}
+form input:focus, #mensaje:focus{
+    border:none;
+    outline: none;
+}
+#mensaje{
+    height: 150px;
+    border-radius: 10px;
+    padding: 10px;
+
+}
+.title{
+    margin:50px;
+}
+.alerta{
+    background-color: rgb(54, 211, 54);
+    height: 100px;
+    width: 230px;
+    border-radius: 15px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.alerta h2, .error h2{
+    color:white;
+    font-size: 20px;
+}
+.error{
+    /* gap:10px; */
+    background-color: rgb(211, 54, 54);
+    height: 100px;
+    width: 230px;
+    border-radius: 15px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.email{
+    margin:30px;
+}
+.correo{
+    margin: 30px;
+}
+@media (max-width:600px){
+    .alerta{
+        background-color: rgb(54, 211, 54);
+        height: 100px;
+        width: 150px;
+        border-radius: 15px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .alerta h2, .error h2{
+        color:white;
+        font-size: 10px;
+    }
+    .error{
+        background-color: rgb(211, 54, 54);
+        height: 100px;
+        width: 200px;
+        border-radius: 15px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}
